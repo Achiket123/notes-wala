@@ -1,0 +1,240 @@
+body {
+    display: inline;
+    background-color: rgb(42, 48, 52);
+}
+
+
+nav img {
+
+    display: inline;
+    height: 40px;
+    margin: 0px 0px 0px 10px;
+}
+
+nav {
+    margin-top: -10px;
+    border-bottom: solid 2px #4dba87;
+    font-family: 'Trebuchet MS';
+    font-size: 30px;
+}
+.parent{
+    display: inline;
+}
+
+.menu1, .menu2 {
+    /* display: inline; */
+    right: 0;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+
+}
+.menu2{
+    display: inline;
+}
+a .txt{
+    text-decoration: none;
+}
+
+nav .txt{
+    color: white;
+    text-decoration: none;
+    display: inline;
+    font-size: 40px;
+}
+.subject{
+    display: flex;
+    overflow: auto;
+    scroll-snap-type:x mandatory;
+    padding: 10px;
+    gap: 12px;
+    scroll-padding: 10px;
+}
+.subject-title{
+    font-family: 'Lucida Sans';
+     border-bottom: #6776b7 solid 10px;
+    margin-bottom: -30px;
+    padding-top: 5%;
+    font-size: 40px;
+}
+.subject-text{
+    display: inline;
+}
+.subject-photo img{
+    height: 200px;
+    width: 300px;
+    margin-top: 10%;
+    border-radius: 10px;
+    /* display: inline; */
+    /* object-position: 12px; */
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+.more{
+    font-family: 'Lucida Sans';
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: inline;
+    font-family: 'Lucida Sans';
+    right: 2%;
+    position: absolute;
+    padding-top: 2%;
+    font-size: 20px;
+}
+
+.cards{
+    max-width: 300px;
+
+    height: 200px;
+    height:auto;
+    margin: 30px 0px 0px 0px;
+    border-radius: 10px;
+    background: linear-gradient(#007bff,#000000);
+    box-shadow:inset rgb(106, 144, 192) 9px -10px 1px 0.5px,
+    rgb(54, 54, 54) -9px -1px 0px 1px;
+}
+.subject .cards{
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+.cards .txt{
+    font-family: 'Lucida Sans';
+    height: 100px;
+    display: block;
+    align-self: center;
+    text-align: center;
+    padding: 20px;
+}
+
+::-webkit-scrollbar{
+    background-color: rgb(47, 47, 47);
+    height: 10px;
+    
+}
+::-webkit-scrollbar-button{
+    background-color: #4f4f4f;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #646464;
+    border-radius: 10px;
+    box-shadow: #000000 3px 2px 1px 3px;
+}
+
+
+.search{
+    padding: 2%;
+    margin: 10% 10% 1% 10%;
+    display: flex;
+    /* justify-content: center; */
+    border-radius: 40px;
+    background-color: rgb(62, 62, 62, 0.4);
+}
+.textbox{
+    font-size: 20px;
+    color: #000000;
+    margin: 2%;
+    width: 80%;
+    height: 50px;
+    border: #5d5d5d solid;
+    background-color: #4f4f4f;
+    outline: none;
+    border-radius: 40px;
+}
+.button{
+    margin: 2%;
+    border: none;
+    background-color: #3e3e3e;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+}
+input::placeholder{
+    padding-bottom: -40px;
+    color: #646464;
+    font-size: 20px;
+}
+
+.button img{
+    
+    height: 40px;
+    width: 40px;
+}
+
+.card-actions {
+    position: relative;
+    width: max-content;
+
+    
+  
+  
+  
+}
+.download{
+    /* position: fixed; */
+    outline: #4d4d4d solid;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+ 
+    
+
+}
+.foot{
+    border-top: #007bff solid 4px;
+    margin-top: 40px;
+}
+.txt{
+    font-family: 'Lucida Sans';
+    height: 100px;
+    display: block;
+    align-self: center;
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: none;
+    color: white;
+    border-bottom: none;
+
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.insta {
+    /* align-self: center; */
+    /* display: flex; */
+    margin-top: -40px;
+    width: 50px;
+   
+}
+.atxt{
+   
+color: white;
+text-decoration: none;
+    
+}
+
+
+.search-card{
+    
+    width: 100%;
+    height: 200px;
+    
+    margin: 30px 0px 0px 0px;
+    border-radius: 10px;
+    background: linear-gradient(#007bff,#000000);
+    box-shadow:inset rgb(106, 144, 192) 9px -10px 1px 0.5px,
+    rgb(54, 54, 54) -9px -1px 0px 1px;
+}
+.search-card .download{
+    position: absolute;
+    top: 0px;
+    left: 150px;
+ 
+}

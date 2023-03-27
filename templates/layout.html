@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+
+</head>
+
+
+<body>
+
+
+
+
+
+
+
+
+
+    <nav><img src="https://yt3.ggpht.com/Rg_yXVR8IC0jpziNACr3gQXlovEXIL17dtVdD65nTh2O6OutrDxhPpFsunOGOq6SvCqvaRq8DQ=s88-c-k-c0x00ffffff-no-rj-mo" alt="" srcset="">
+        <a href="/" class="txt"> Notes wala</a>
+
+
+    </nav>
+
+    <form action="" method="post">
+
+    <div class="search">
+        <input type="text" class="textbox" placeholder="Search" id="search-box" name="search-box">
+        <button class="button" type="submit"><img
+                src="https://imgs.search.brave.com/yZUVvK8c1cnNn9jQ9QtIUo1Pjdd2cWC6if--QuKk--Q/rs:fit:980:980:1/g:ce/aHR0cHM6Ly9jZG4u/b25saW5ld2ViZm9u/dHMuY29tL3N2Zy9p/bWdfMTk3NzkxLnBu/Zw"
+                alt="" id="searchs"></button>
+    </div>
+</form>
+
+
+{% block content %}
+    
+{% endblock content %}
+<footer  >
+<div class="foot" >
+    
+        <div class="txt">
+                this website is Made by <a href="https://www.instagram.com/achik.et/" class="atxt">Achiket</a>
+        </div>
+ 
+
+
+<div class="social">
+    <a href="https://www.instagram.com/achik.et/" ><img src="https://imgs.search.brave.com/XmcXF2_S_pGXjHNeZR-y9JOkCjcb4_kfVRlhFmTz5Ho/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly8xLmJw/LmJsb2dzcG90LmNv/bS8tOGlVQW9CbGFE/WHMvWHlka2VUdUxl/M0kvQUFBQUFBQUFB/RzgvMGhCa0tzVVJB/S1FUTThGUTZEQkV2/SFFTNV96amtZSHJ3/Q0xjQkdBc1lIUS9z/MjA0OC9sb2dvJTJC/aW5zdGFncmFtJTJC/aGl0YW0lMkJ5b2dp/YW5jcmVhdGl2ZS5w/bmc" alt="" class="insta"></a>
+</div>
+
+</div>
+
+</footer>
+</body>
+
+<script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+
+</html>

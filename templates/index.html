@@ -1,0 +1,81 @@
+
+
+
+
+
+
+
+
+
+    
+
+
+{% extends 'layout.html' %}
+{% block content %}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% for sub_name in Class_11 %}
+<div class="sub-list">
+
+    <div class="navv">
+        <nav class="subject-title"><p class="txt" id="text" name="ntext">{{sub_name}} ({{symbol[sub_name]}}) </p>
+
+        </nav>
+    </div>
+
+
+    <div class="subject">
+        <div class="subject-photo">
+            <img src={{photo[sub_name]}}
+                alt="">
+        </div>
+
+        {% for sub in Class_11[sub_name] %}
+        <div class="cards">
+            <div class="txt" id="chname">
+               <p id="chapter-name">{{sub}}</p>
+            </div>
+            <div class="card-actions">
+                <button class="download" onclick="location.href = '{{Class_11[sub_name][sub]}}'">Download</button>
+            </div>
+        </div>
+        {% endfor %}
+
+
+
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+{% endfor %}
+
+
+
+{% endblock content %}

@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+
+{% for i in Chemistry11.keys() %}
+
+    {% if search in i.lower() %}
+        <div class="search-card">
+            <div class="txt" id="chname">
+                <p id="chapter-name">{{i}}</p>
+             </div>
+             <div class="card-actions">
+                 <button class="download" onclick="location.href = '{{Chemistry11[i]}}'">Download</button>
+             </div>
+        </div>
+    {% endif %}
+        
+    
+{% endfor %}
+{% for i in Physics11.keys() %}
+
+    {% if search in i.lower() %}
+        <div class="search-card">
+            <div class="txt" id="chname">
+                <p id="chapter-name">{{i}}</p>
+             </div>
+             <div class="card-actions">
+                 <button class="download" onclick="location.href = '{{Physics11[i]}}'">Download</button>
+             </div>
+        </div>
+    {% endif %}
+        
+    
+{% endfor %}
+{% for i in Maths11.keys() %}
+
+    {% if search in i.lower() %}
+        <div class="search-card">
+            <div class="txt" id="chname">
+                <p id="chapter-name">{{i}}</p>
+             </div>
+             <div class="card-actions">
+                 <button class="download" onclick="location.href = '{{Maths11[i]}}'">Download</button>
+             </div>
+        </div>
+    {% endif %}
+        
+    
+{% endfor %}
+
+
+{% endblock content %}
